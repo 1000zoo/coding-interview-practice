@@ -7,8 +7,6 @@ package chapter01_Array_and_String;
 
 public class Prob05 {
 
-
-
     // Solution1
     // Big-O : O(N)
     public static boolean similar01(String s1, String s2) {
