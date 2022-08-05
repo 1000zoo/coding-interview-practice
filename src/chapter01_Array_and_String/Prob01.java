@@ -1,4 +1,5 @@
 package chapter01_Array_and_String;
+
 import java.util.HashSet;
 
 
@@ -23,6 +24,7 @@ public class Prob01 {
                 hs.add(s.charAt(i));
             }
         }
+
         return false;
     }
 
@@ -43,5 +45,6 @@ public class Prob01 {
     public static void main(String[] args) {
         String s = "";
         System.out.println(hasReduplication01(s));
+        System.out.println(hasReduplication02(s));
     }
 }
