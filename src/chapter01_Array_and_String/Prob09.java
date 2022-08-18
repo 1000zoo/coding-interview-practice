@@ -10,7 +10,7 @@ ex) waterbottle -> erbottlewat (true)
 public class Prob09 {
 
     // Solution 1
-    // Big-O => O(N) (isSubstring() 메서드에서)
+    // Big-O => Time : O(N) (isSubstring() 메서드에서) Space : O(N)
     public static boolean isRotation(String s1, String s2) {
         if (s1.length() != s2.length()) {
             return false;
