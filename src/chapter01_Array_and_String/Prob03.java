@@ -11,7 +11,7 @@ package chapter01_Array_and_String;
 public class Prob03 {
     // Solution1
     // StringBuilder 을 이용
-    // Big-O : O(N)
+    // Big-O : Time : O(N) Space : O(N)
     public static String toURL01(String s1) {
         StringBuilder url = new StringBuilder();
         for (int i = 0; i < s1.length(); i++) {
@@ -26,8 +26,7 @@ public class Prob03 {
 
     // Solution2
     // character array 이용
-    // Big-O : O(N)
-
+    // Big-O : Time : O(N), Space : O(N)
     public static String toURL02(String s1) {
         int blank = countBlank(s1);
         char[] url = new char[(blank * 2) + s1.length()];
