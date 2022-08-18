@@ -8,7 +8,7 @@ package chapter01_Array_and_String;
 public class Prob05 {
 
     // Solution1
-    // Big-O : O(N)
+    // Big-O : Time : O(N), Space : O(N)
     public static boolean similar01(String s1, String s2) {
         if (Math.abs(s1.length() - s2.length()) > 1) {
             return false;
