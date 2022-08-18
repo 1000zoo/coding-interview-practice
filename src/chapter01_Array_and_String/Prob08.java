@@ -9,7 +9,7 @@ public class Prob08 {
 
 
     //Solution1
-    //Big-O => O(M * N), Space => O(M * N)
+    //Big-O => Time : O(M * N), Space : O(M * N)
     public static int[][] to0(int[][] m) {
         int[][] ans = matrixDeepCopy(m);
         for (int i = 0; i < m.length; i++) {
