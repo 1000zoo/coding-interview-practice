@@ -12,6 +12,7 @@ public class Prob07 {
 
     //Solution 1
     //행렬을 추가로 사용
+    // Big-O => Time : O(N^2), Space : O(N^2)
     public static int[][] rotation(int[][] m) {
         int l = m.length;
         int[][] ans = new int[l][l];
