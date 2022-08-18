@@ -11,7 +11,7 @@ public class Prob02 {
 
     // Solution1
     // Arrays.sort() 를 이용
-    // Big-O: 문자열의 길이가 같기 때문에 O(Nlog(N))
+    // Big-O: 문자열의 길이가 같기 때문에  Time : O(Nlog(N)), Space(N)
     public static boolean isPermutation01(String s1, String s2) {
         if (s1.length() != s2.length()) {
             return false;
@@ -26,7 +26,7 @@ public class Prob02 {
     // Solution2
     // int[] 를 이용
     // s1 과 s2 가 ASCII 코드로만 이루어진 경우
-    // Big-O: O(N)
+    // Big-O => Time : O(N), Space : O(1)
     public static boolean isPermutation02(String s1, String s2) {
         if (s1.length() != s2.length()) {
             return false;
