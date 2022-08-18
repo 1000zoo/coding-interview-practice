@@ -13,7 +13,7 @@ public class Prob01 {
 
     // Solution 1
     // HashSet 이용
-    // Big-O => O(NlogN)
+    // Big-O => Time : O(N), Space : O(N)
     public static boolean hasReduplication01(String s) {
         HashSet<Character> hs = new HashSet<>();
 
@@ -30,13 +30,25 @@ public class Prob01 {
 
     // Solution 2
     // 추가 자료구조 이용 X
-    // Big-O => O(N^2)
+    // Big-O => Time : O(N^2), Space : O(1)
     public static boolean hasReduplication02(String s) {
         for (int i = 0; i < s.length() - 1; i++) {
             for (int j = i + 1; j < s.length(); j++) {
                 if (s.charAt(i) == s.charAt(j)) {
                     return true;
                 }
+            }
+        }
+        return false;
+    }
+
+    // Solution 3
+    // Big - O => Time : O(N), Space : O(1)
+    // ASCII 코드 이용
+    public boolean hasDuplication(String s) {
+        for (int i = 0; i < s.length() - 1; i++) {
+            for (int j = i + 1; j < s.length(); j++) {
+                if (s.charAt(i) == s.charAt(j)) return true;
             }
         }
         return false;
