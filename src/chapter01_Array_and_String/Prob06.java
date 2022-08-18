@@ -10,7 +10,7 @@ public class Prob06 {
 
 
     //Solution 1
-    //Big-O : O(N)
+    //Big-O : Time : O(N), Space : O(N)
     public static String zip(String s) {
         StringBuilder sb = new StringBuilder();
 
