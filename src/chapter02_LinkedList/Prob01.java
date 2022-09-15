@@ -8,6 +8,9 @@ import java.util.ArrayList;
  */
 
 public class Prob01 {
+
+    //Time : O(N)
+    //Space: O(N)
     public static void deleteDuplication(ListNode head) {
         HashSet<Integer> set = new HashSet<>(){{
             add(head.val);
@@ -24,6 +27,23 @@ public class Prob01 {
                 System.out.println("mooYaHo");
                 return;
             }
+        }
+    }
+
+    //Time : O(N)
+    //Space: O(N)
+    public void sol2(ListNode head) {
+        HashSet<Integer> set = new HashSet<>();
+        ListNode prev = null;
+        ListNode curr = head;
+        while (curr != null) {
+            if (set.contains(curr.val)) {
+                prev.next = prev.next.next;
+            } else {
+                set.add(curr.val);
+                prev = curr;
+            }
+            curr = curr.next;
         }
     }
 
