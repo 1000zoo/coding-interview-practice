@@ -6,6 +6,7 @@ package chapter03_Stack_and_Queue;
             스택으로 구성되어 있으며, 이전 스택이 용량을 초과하는 경우, 새로운 스택을
             생성해야한다. SetOfStacks.push() 와 SetOfStacks.pop() 은 스택이
             하나인 경우와 동일하게 동작해야 한다.
+            추가문제: 특정 하위스택에 index 로 접근하여 pop을 해주는 함수
  */
 
 import java.util.Stack;
