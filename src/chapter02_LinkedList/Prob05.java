@@ -10,8 +10,8 @@ import java.util.ArrayList;
 
 public class Prob05 {
 
-    //Time : O(h1 + h2)
-    //Space: O(h1 + h2)
+    //Time : O(max(h1, h2)) => O(N)
+    //Space: O(h1 + h2) => O(N)
     public static ListNode sum(ListNode head1, ListNode head2) {
         ListNode answer = new ListNode();
         ListNode ac = answer;
