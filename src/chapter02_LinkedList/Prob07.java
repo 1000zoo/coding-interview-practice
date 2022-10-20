@@ -50,8 +50,4 @@ public class Prob07 {
         }
         return null;
     }
-
-
-    public static void main(String[] args) {
-    }
 }

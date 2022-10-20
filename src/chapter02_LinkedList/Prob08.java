@@ -20,8 +20,4 @@ public class Prob08 {
         }
         return null;
     }
-
-
-    public static void main(String[] args) {
-    }
 }

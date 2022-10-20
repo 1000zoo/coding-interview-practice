@@ -40,21 +40,4 @@ public class Prob04 {
         node.next = next.next;
         next.next = null;
     }
-
-    public static void main(String[] args) {
-        ArrayList<Integer> list = new ArrayList<>() {{
-            add(1);
-            add(2);
-            add(9);
-            add(8);
-            add(7);
-            add(4);
-            add(4);
-        }};
-        ListNode head = new ListNode(list);
-        head = head.next;
-        System.out.println(head);
-        ListNode newNode = rearrangement(head, 5);
-        System.out.println(newNode);
-    }
 }

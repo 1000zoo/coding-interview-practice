@@ -53,19 +53,4 @@ public class Prob06 {
         }
         return answer;
     }
-
-
-    public static void main(String[] args) {
-        ArrayList<Integer> list = new ArrayList<>(){{
-            add(1);
-            add(2);
-            add(3);
-            add(1);
-        }};
-        ListNode nod1 = new ListNode(list);
-        ListNode node = nod1.next;
-        System.out.println(node);
-        System.out.println(reverse(node));
-        System.out.println(isPalindrome2(node));
-    }
 }

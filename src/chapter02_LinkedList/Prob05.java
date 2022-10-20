@@ -49,25 +49,4 @@ public class Prob05 {
         }
         return answer.next;
     }
-
-    public static void main(String[] args) {
-        ArrayList<Integer> list1 = new ArrayList<>(){{
-            add(4);
-            add(3);
-            add(2);
-        }};
-        ArrayList<Integer> list2 = new ArrayList<>(){{
-            add(1);
-            add(1);
-            add(1);
-        }};
-        ListNode node1 = new ListNode(list1);
-        ListNode node2 = new ListNode(list2);
-        node1 = node1.next;
-        node2 = node2.next;
-        ListNode answer = sum(node1, node2);
-        System.out.println(node1);
-        System.out.println(node2);
-        System.out.println(answer);
-    }
 }
