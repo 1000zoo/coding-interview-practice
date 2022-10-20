@@ -8,6 +8,8 @@ import java.util.HashSet;
 
 public class Prob08 {
 
+    //Time : O(N)
+    //Space: O(N)
     public static ListNode circularNode(ListNode head) {
         HashSet<ListNode> set = new HashSet<>();
         ListNode curr = head;
