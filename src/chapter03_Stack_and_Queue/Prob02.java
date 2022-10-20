@@ -1,7 +1,7 @@
 package chapter03_Stack_and_Queue;
 
-/**
- * 3.2 스택 Min: 기본적인 push 와 pop 기능이 구현된 스택에서 최솟값을 반환하는 min 함수롤 추가하려고 해라.
+/*
+3.2 스택 Min: 기본적인 push 와 pop 기능이 구현된 스택에서 최솟값을 반환하는 min 함수롤 추가하려고 해라.
  */
 
 public class Prob02 {
