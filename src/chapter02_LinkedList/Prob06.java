@@ -9,6 +9,8 @@ import java.util.ArrayList;
 
 public class Prob06 {
 
+    //Time : O(2 * N) => O(N)
+    //Space: O(N)
     public static boolean isPalindrome(ListNode head) {
         Stack<Integer> st = new Stack<>();
         ListNode curr = head;
@@ -26,6 +28,8 @@ public class Prob06 {
         return true;
     }
 
+    //Time : O(N)
+    //Space: O(N) => ListNode reverse
     public static boolean isPalindrome2(ListNode head) {
         ListNode curr = head;
         ListNode reverse = reverse(head);
