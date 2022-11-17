@@ -57,6 +57,7 @@ public class Prob03 {
             stacks.push(q.poll());
         }
         return item;
+//         return stacks.get(index).pop();
     }
 
     public int getCurrentSize() {
