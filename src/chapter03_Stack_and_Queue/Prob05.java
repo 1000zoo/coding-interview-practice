@@ -30,10 +30,6 @@ public class Prob05 {
                     main.push(temp.pop());
                 }
             }
-            for (Integer integer : main) {
-                System.out.print(integer + ", ");
-            }
-            System.out.println();
         }
 
         public int pop() {
