@@ -8,19 +8,19 @@ package chapter04_Tree_and_Graph;
 import java.util.*;
 
 public class Prob02 {
-    private int[] array;
-    public TreeNode getBinarySearchTree(int[] _array) {
-        array = _array;
-        return setTree(0, array.length - 1);
+
+    public TreeNode getBST(int[] array) {
+        return dfs(array, 0, array.length - 1);
     }
 
-    public TreeNode setTree(int start, int end) {
-        if (end < start) return null;
+    private TreeNode dfs(int[] array, int start, int end) {
+        if (start > end) return null;
 
         int mid = (start + end) / 2;
-        TreeNode node = new TreeNode(array[mid]);
-        node.leftChild = setTree(start, mid - 1);
-        node.rightChild = setTree(mid + 1, end);
-        return node;
+
+        TreeNode leftChild = dfs(array, start, mid - 1);
+        TreeNode rightChild = dfs(array, mid + 1, end);
+
+        return new TreeNode(array[mid], leftChild, rightChild);
     }
 }
