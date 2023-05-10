@@ -4,15 +4,15 @@ import java.util.*;
 
 public class Node <T>{
     public T val;
-    public List<Node<T>> neighbor;
+    public List<Node<T>> children;
 
     public Node(T val) {
         this.val = val;
-        neighbor = new ArrayList<>();
+        children = new ArrayList<>();
     }
 
     public Node(T val, List<Node<T>> neighbor) {
         this.val = val;
-        this.neighbor = neighbor;
+        this.children = neighbor;
     }
 }

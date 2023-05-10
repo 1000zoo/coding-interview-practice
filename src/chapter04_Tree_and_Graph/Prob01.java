@@ -19,7 +19,7 @@ public class Prob01<T> {
         while(!queue.isEmpty()) {
             Node<T> curr = queue.poll();
 
-            for (Node<T> next : curr.neighbor) {
+            for (Node<T> next : curr.children) {
                 if (next == node2) return true;
 
                 if (!visited.contains(next)) {
