@@ -11,8 +11,8 @@ public class Node <T>{
         children = new ArrayList<>();
     }
 
-    public Node(T val, List<Node<T>> neighbor) {
+    public Node(T val, List<Node<T>> children) {
         this.val = val;
-        this.children = neighbor;
+        this.children = children;
     }
 }
