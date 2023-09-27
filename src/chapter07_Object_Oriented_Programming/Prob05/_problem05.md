@@ -1,7 +1,6 @@
-package chapter07_Object_Oriented_Programming.Prob05;
-
-/*
+# 문제
 7.5 온라인 북 리더 시스템을 만들어라
+
 # 가정
 - 사용자 가입 정보 생성 및 확장
 - 서적 데이터 베이스 검색 기능
@@ -11,10 +10,9 @@ package chapter07_Object_Oriented_Programming.Prob05;
 
 # 설계
 
-## OnlineReaderSystem
-## Library
-## UserManager
-## Display
-## User
-## Book
- */
+### OnlineReaderSystem
+### Library
+### UserManager
+### Display
+### User
+### Book
